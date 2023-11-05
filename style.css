@@ -9,7 +9,7 @@ body, h1, h2, p, ul, li {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #333;
     text-align: center;
     padding: 20px;
@@ -18,6 +18,7 @@ header {
 .logo {
     width: 5rem;
 }
+
 
 /* Define styles for the sidebar */
 nav {
@@ -114,3 +115,9 @@ button {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
 }
+
+.website_page {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
