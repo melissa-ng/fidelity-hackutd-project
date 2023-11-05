@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <script src="budget.js"></script>
     <link rel="shortcut icon" href="imgs/logo.jpeg">
 
     <meta charset="UTF-8">
@@ -25,8 +25,33 @@
     </nav>
     <main>
         <section>
-            <h2>Content Area</h2>
-            <p>This is the main content area of the webpage.</p>
+            <h2>Budget Calculator</h2>
+            <form action="process_inquiry.php" method="post" class="inquiry-form" id="myForm">
+                <label for="income">Monthly Income:</label>
+                <input type="number" id="income" name="income" required>
+        
+                <label for="rent">Monthly Rent:</label>
+                <input type="number" id="rent" name="rent" required>
+
+                <label for="bills">Monthly Bills:</label>
+                <input type="number" id="bills" name="bills" required>
+
+                <label for="loans">Monthly Loan Payments:</label>
+                <input type="number" id="loans" name="loans" required>
+        
+                <label for="groceries">Monthly Grocery Expenses:</label>
+                <input type="number" id="groceries" name="groceries" required>
+               
+                <input type="submit" value="Submit" class="submit" id="submitBtn">
+            </form>
+
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <h2>Your budgetting results!</h2>
+                    <p id="text"></p>
+                    <button id="closeModal">Close</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

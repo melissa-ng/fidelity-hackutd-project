@@ -1,29 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the form and submit button
     const form = document.getElementById("myForm");
     const submitBtn = document.getElementById("submitBtn");
-
-    // Get the modal and the close button
     const modal = document.getElementById("myModal");
     const closeModalBtn = document.getElementById("closeModal");
 
-    // Function to show the modal and clear form inputs
-    function showModal() {
+    function showModal(email, name) {
         modal.style.display = "block";
-        form.reset(); // Clear form inputs
+        document.getElementById("userEmail").textContent = email;
+        document.getElementById("userName").textContent = name;
+        form.reset();
     }
 
-    // Function to close the modal
     function closeModal() {
         modal.style.display = "none";
     }
 
-    // Event listener for form submission
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent the default form submission
-        showModal(); // Show the modal
+        e.preventDefault();
+        const email = document.getElementById("email").value; // Get the entered email
+        const name = document.getElementById("name").value; // Get the entered email
+        showModal(email, name);
     });
 
-    // Event listener for closing the modal
     closeModalBtn.addEventListener("click", closeModal);
 });
