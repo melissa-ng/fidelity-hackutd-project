@@ -11,11 +11,11 @@ window.addEventListener('load', function () {
         event.preventDefault();
 
         // Get the input values
-        const income = document.getElementById('income').value;
-        const rent = document.getElementById('rent').value;
-        const bills = document.getElementById('bills').value;
-        const loans = document.getElementById('loans').value;
-        const groceries = document.getElementById('groceries').value;
+        const income = Number(document.getElementById('income').value);
+        const rent = Number(document.getElementById('rent').value);
+        const bills = Number(document.getElementById('bills').value);
+        const loans = Number(document.getElementById('loans').value);
+        const groceries = Number(document.getElementById('groceries').value);
 
         const savings = .1 * income;
         const totalExpenses = rent + bills + loans + groceries;

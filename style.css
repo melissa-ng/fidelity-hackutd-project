@@ -22,6 +22,7 @@ header {
 
 /* Define styles for the sidebar */
 nav {
+    font-size: 18px;
     background-color: #9b6218;
     color: #fff;
     width: 200px;
@@ -52,6 +53,26 @@ section {
     background-color: #fff;
     border: 1px solid #eddfc4;
     padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.motto {
+    text-align: center;
+}
+
+.moneyjar {
+    margin-top: -4rem;
+    width: 65%;
+    margin-left: 18rem;
+}
+
+.jars {
+    margin-top: 1rem;
+    width: 65%;
 }
 
 .profile {
@@ -91,6 +112,29 @@ section {
     padding: 20px;
     text-align: center;
     border-radius: 5px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
+    grid-template-rows: repeat(3, auto); /* Two rows with a fixed height of 100px */
+    gap: 10px; /* Add a gap between grid items */    
+}
+
+.article-grid-item {
+    background-color: #4a2e09; /* Background color for grid items */
+    color: #fff; /* Text color for grid items */
+    text-align: center;
+    padding: 10px;
+}
+
+.article-grid-img {
+    width: 100%;
+}
+
+.article-titles {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Define styles for the footer */
