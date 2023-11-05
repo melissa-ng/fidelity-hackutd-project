@@ -9,8 +9,8 @@ body, h1, h2, p, ul, li {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     text-align: center;
     padding: 20px;
 }
@@ -21,7 +21,7 @@ header {
 
 /* Define styles for the sidebar */
 nav {
-    background-color: #555;
+    background-color: #9b6218;
     color: #fff;
     width: 200px;
     float: left;
@@ -49,7 +49,7 @@ main {
 
 section {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #eddfc4;
     padding: 20px;
 }
 
@@ -65,11 +65,38 @@ section {
     border-radius: 50%;
 }
 
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 /* Define styles for the footer */
 footer {
     clear: both;
-    background-color: #333;
-    color: #fff;
+    background-color: #eddfc4;
+    color: #333;
     text-align: center;
     padding: 5rem;
 }

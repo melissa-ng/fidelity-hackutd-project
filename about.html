@@ -3,9 +3,12 @@
 <head>
     <title>About Us</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="imgs/logo.jpeg">
 </head>
 <body>
     <header>
+        <img src="imgs/logo.jpeg" alt="Diverse Dollar logo" class="logo"/>
         <h1>About Us</h1>
     </header>
     <nav>
@@ -32,18 +35,39 @@
             <h2>Melissa</h2>
             <p>Hello! I'm Melissa Ng, and I am majoring in Computer Science with minors in Spanish and Mathematics at the University of Oklahoma. I have a passion for leveraging technology to solve real-world problems and believe that technology has the power to transform the world for the better. My hobbies include backpacking, roller skating, thrifting, and jigsaw puzzles! In addition to my coursework, I'm currently seeking internships and opportunities to gain practical experience and expand my knowledge!</p>
         </div>
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need to get in touch with us, please feel free to contact us using the following information:</p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to leave an inquiry, please use the form below:</p>
+        
+        <form action="process_inquiry.php" method="post" class="inquiry-form" id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <input type="submit" value="Submit" class="submit" id="submitBtn">
+        </form>
 
-            <ul>
-                <li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
-                <li>Phone: <a href="tel:+1234567890">123-456-7890</a></li>
-                <li>Address: 123 Main Street, City, Country</li>
-            </ul>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <p>Form submitted successfully!</p>
+                <button id="closeModal">Close</button>
+            </div>
+        </div>
+
         </section>
     </main>
     <footer>
-        <p>Footer content goes here.</p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need to get in touch with us, please feel free to contact us using the following information:</p>
+        <ul class="footer-links">
+            <li><a href="mailto:diversedollar@gmail.com">diversedollar@gmail.com</a></li>
+            <li><a href="tel:+1234567890">+1-800-SOO-NERS</a></li>
+            <li><a href="https://www.google.com/maps/place/123+S+Sooner+Rd,+Midwest+City,+OK+73110/@35.4632508,-97.427441,17z/data=!3m1!4b1!4m5!3m4!1s0x87b23d9c782defe7:0xd0157d61dab4c443!8m2!3d35.4632465!4d-97.4248714?entry=ttu">123 Sooner Rd, Norman, Oklahoma</a></li>
+        </ul>
     </footer>
 </body>
 </html>
