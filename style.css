@@ -15,6 +15,10 @@ header {
     padding: 20px;
 }
 
+.logo {
+    width: 5rem;
+}
+
 /* Define styles for the sidebar */
 nav {
     background-color: #555;
